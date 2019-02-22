@@ -18,3 +18,8 @@
 
 
 }
+.field_with_errors textarea {
+	border-color: red;
+
+
+}
