@@ -3,10 +3,17 @@ class ArticlesController < ApplicationController
   def new
   end
 
+  def show
+  end
+
   def create
       # render plain: article_params[:article].inspect
       @article = Article.new(article_params)
-    @article.save
+      if @article.valid?
+        @article.save
+      else
+        render action: 'new'
+      end
   end
 
   private
