@@ -31,3 +31,6 @@
 /config/master.key
 
 def.rb
+Gemfile.lock
+.gitignore
+Gemfile.lock
