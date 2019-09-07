@@ -1,6 +1,6 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :comment do
-    author "Mike"
+    author { "Mike" }
     sequence(:body) { |n| "comment body #{n}" }
 end
   end
